@@ -4,9 +4,7 @@ import useProducts from '../../hooks/useProducts'
 
 export default function MenuList() {
 
-
   const [allProducts] = useProducts()
-
 
   const initCategory=['All', "BREAD", "PIE&COOKIE", "CAKE"]
 
@@ -21,13 +19,9 @@ export default function MenuList() {
             item
         )
     })
-   
   }
 
   const categoryItems=getCategoryItems(allProducts,category)
-
-
-
 
   function getCategoryItems(allProducts,category){
     if(category==='All'){
@@ -52,19 +46,20 @@ export default function MenuList() {
             <nav className={Style.tabmenu}>
                 <h3 class='hidden'>메뉴 텝버튼</h3>
                 <ul className={`${Style.tabmenu_list} is-flex`}>
-                    {/* <li className={Style.selected}><a href="#;">All</a></li>
-                    <li><a href="#;">NEW</a></li>
-                    <li><a href="#;">BEST</a></li>
-                    <li><a href="#;">BASIC</a></li> */}
                     {
                         allCategory.map((item)=>{
-                            return (
+                            return(
                                 <li className={`${category===item && Style.selected}`} onClick={()=>{
-                                   changeCategory(item)
+                                    changeCategory(item)
                                 }}><a href="#;">{item}</a></li>
                             )
                         })
                     }
+                    {/* <li className={Style.selected}><a href="#;">All</a></li>
+                    <li><a href="#;">NEW</a></li>
+                    <li><a href="#;">BEST</a></li>
+                    <li><a href="#;">BASIC</a></li> */}
+
                 </ul>
             </nav>
             <div className={Style.menu_list_wrap}>
