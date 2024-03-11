@@ -1,23 +1,42 @@
 import React from 'react'
 import Style from './css/Strawberry.module.css'
+import { useParams } from 'react-router-dom'
+import useProducts from '../../hooks/useProducts'
+
 
 export default function Strawberry() {
+
+  const [allProducts] = useProducts()
+
+  const {menuItem} = useParams()
+
+  const selectProduct=getSelectItems(allProducts, menuItem)
+
+  //console.log(selectProduct)
+
+  function getSelectItems(allProducts, menuItem){
+    return (
+        allProducts.find((item)=>(item.id===menuItem))
+    )
+  }
+ 
+
   return (
     <div className={Style.contents_wrap}>
         <section className={Style.contents}>
             <h2 className='hidden'>딸기파이 상세</h2>
             <div className={Style.strawberry_img_wrap}>
-                <img src="/images/menu/menu1.png" alt="딸기파이" className={Style.main_img}/>
-                <ul className={`${Style.sub_img_list} is-flex`}>
+                <img src={selectProduct?.image} alt={selectProduct?.name} className={Style.main_img}/>
+                {/* <ul className={`${Style.sub_img_list} is-flex`}>
                     <li className={Style.selected}><img src="/images/menu/strawberry1.png" alt="딸기파이1" /></li>
                     <li><img src="/images/menu/strawberry2.png" alt="딸기파이2" /></li>
-                </ul>
+                </ul> */}
             </div>
             <div className={Style.strawberry_text_wrap}>
-                <p className={Style.name}>딸기파이</p>
-                <p className={Style.name_eng}>Strawberry Pie</p>
-                <p className={Style.text}>바삭하고 달달한 파이 사이에 부드러운 크림과 신선한 딸기가 어우러진 상큼한 맛. 달콤하고 고소한 딸기 파이.</p>
-                <p className={Style.price}>가격 : 4,200 원</p>
+                <p className={Style.name}>{selectProduct?.name}</p>
+                <p className={Style.name_eng}>{selectProduct?.category}</p>
+                <p className={Style.text}>{selectProduct?.text}</p>
+                <p className={Style.price}>가격 : {selectProduct?.price} 원</p>
                 <div className={Style.ingredient_wrap}>
                     <p className={Style.ingredient_title}><i class="fa-solid fa-circle"></i>주재료</p>
                     <ul className={`${Style.ingredient_list} is-flex`}>

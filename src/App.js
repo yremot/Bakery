@@ -3,7 +3,7 @@ import AboutUs from './Pages/AboutUs';
 import AboutUsShop from './Pages/AboutUsShop';
 import Home from './Pages/Home';
 import Menu from './Pages/Menu';
-import MenuItem2 from './Pages/MenuItem2';
+import MenuItem from './Pages/MenuItem';
 import News from './Pages/News';
 import NotFound from './Pages/NotFound';
 import Root from './Pages/Root';
@@ -35,7 +35,7 @@ function App() {
           children:[
               {index:true, element:<Home/>},
               {path:'/menu', element:<Menu/>},
-              {path:'/menu/:menuItem', element:<MenuItem2/>},
+              {path:'/menu/:menuItem', element:<MenuItem/>},
               {path:'/news', element:<News/>},
               {path:'/aboutus', element:<AboutUs/>},
               {path:'/aboutus_shop', element:<AboutUsShop/>},

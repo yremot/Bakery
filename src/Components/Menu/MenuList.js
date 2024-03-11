@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Style from './css/MenuList.module.css'
 import useProducts from '../../hooks/useProducts'
+import { Link } from 'react-router-dom'
 
 export default function MenuList() {
 
@@ -150,16 +151,18 @@ export default function MenuList() {
                         categoryItems.map((item)=>{
                             return(
                                 <li>
-                                    <p className={Style.menu_img}><a href="#;">
-                                    <img src={item.image} alt="초코칩파운드케이크" />           
-                                    </a></p>
-                                    <p className={Style.menu_name}>{item.name} 
-                                    <span>{item.category}</span>
-                                    </p>
-                                    
-                                    <p className={Style.menu_text}>{item.text}</p>
-                                    <p className={Style.menu_price}>가격 : {item.price} 원</p>
-                                    <button className={Style.menu_btn}><i class="fa-solid fa-chevron-right"></i></button>
+                                    <Link to={`/menu/${item.id}`}>
+                                        <p className={Style.menu_img}><a href="#;">
+                                        <img src={item.image} alt="초코칩파운드케이크" />           
+                                        </a></p>
+                                        <p className={Style.menu_name}>{item.name} 
+                                        <span>{item.category}</span>
+                                        </p>
+                                        
+                                        <p className={Style.menu_text}>{item.text}</p>
+                                        <p className={Style.menu_price}>가격 : {item.price} 원</p>
+                                        <button className={Style.menu_btn}><i class="fa-solid fa-chevron-right"></i></button>
+                                    </Link>
                                 </li>
                             )
                         })
