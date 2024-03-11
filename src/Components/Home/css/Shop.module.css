@@ -1,0 +1,68 @@
+div.shop_wrap{
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+section.shop{
+    width: 1200px;
+    min-width: 768px;
+    height: 100%;
+    margin: 0px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+p.shop_title{
+    font: bold 24px "Noto Sans KR";
+    margin-bottom: 8px;
+    margin-top: 100px;
+}
+p.shop_text{
+    font:normal 18px "Noto Sans KR"
+}
+div.search_wrap{
+    float: right;
+    position: relative;
+    left: 0px;
+    top: -20px;
+    width: 350px;
+    height: 40px;
+}
+div.search_wrap input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: solid 1px #e9e9e9;
+    font: normal 16px "Noto Sans KR";
+    padding-left: 10px;
+    padding-right: 30px;
+    text-indent: 4px;
+}
+div.search_wrap i{
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(66, 66, 66);
+}
+div.shop_map{
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 50px;
+    height: 500px;
+    background: url(/public/images/contents/map.png) no-repeat center center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:1200px) {
+    section.shop{
+        width: 100%;
+    }
+}

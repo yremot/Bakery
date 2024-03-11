@@ -1,0 +1,101 @@
+/* 1 */
+article.brand_story{
+    width: 100%;
+    height: 500px;
+}
+p.story_img{
+    width: 58%;
+    height: 400px;
+    background: url(/public/images/AboutUs/brand_story.png) no-repeat center center;
+    background-size: cover;
+    float: left;
+    margin-right: 4%;
+}
+p.story_title{
+    font: bold 2.5em/150% 'Noto Sans KR';
+    margin-top: 1.5em;
+}
+p.story_subtitle{
+    font: bold 1.5em 'Noto Sans KR';
+    color: #aaa;
+    margin-bottom: 32px;
+}
+p.story_text{
+    width: 40%;
+    margin-left: 60%;
+    text-align: justify;
+    font: normal 16px 'Noto Sans KR';
+    color:  #626262;
+}
+/* 2 */
+article.brand_keywords{
+    width: 100%;
+    height: 300px;
+}
+div.key_list_wrap{
+    width: 100%;
+    height: 200px;
+}
+ul.key_list{
+    width: 100%;
+    height: 100%;
+    background: #5F3F30;
+    justify-content: space-around;
+}
+ul.key_list li p{
+    color: #F9F5F0;
+    text-align: center;
+}
+ul.key_list li{
+    width: 15%;
+}
+p.key_icon{
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+p.key_title{
+    font: bold 16px 'Noto Sans KR';
+    margin-bottom: 8px;
+
+}
+p.key_text{
+    font: normal 12px/150% 'Noto Sans KR';
+}
+/* 3 */
+article.brand_corevalue{
+    width: 100%;
+}
+div.core_list_wrap{
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+}
+ul.core_list{
+    width: 100%;
+}
+ul.core_list li{
+    width: 25%;
+}
+p.core_img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+p.core_img img{
+    width: 100%;
+}
+p.core_title{
+    text-align: center;
+    font: normal 20px 'Noto Sans KR';
+    color: #626262;
+}
+
+@media screen and (max-width:1200px) {
+    article.brand_story{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:980px) {
+    ul.core_list li{
+        width: 30%;
+    }
+}

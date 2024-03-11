@@ -1,0 +1,4 @@
+div.sub_visual{
+    background: url(/public/images/news_sub_visual.jpg) no-repeat center center;
+    background-size: cover;
+}

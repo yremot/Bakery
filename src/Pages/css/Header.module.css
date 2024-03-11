@@ -1,0 +1,115 @@
+/* 헤더영역 */
+div.header_wrap{
+    width: 100%;
+    height: 80px;
+    /* height: 230px; */
+    background: linear-gradient(to bottom, rgba(51,29,18,1) 0%,rgba(51,29,18,1) 80px,rgba(0,0,0,0.7) 80px,rgba(0,0,0,0.7) 100%); 
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+header{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    min-width: 768px;
+}
+h1.logo{
+    width: 160px;
+    height: 45px;
+    float: left;
+}
+h1.logo>img{
+    width: 100%;
+}
+nav.mainmenu{
+    width: 50%;
+    height: 100%;
+    margin-left: 11%;
+    float: left;
+}
+ul.mainmenu_list{
+    width: 100%;
+    /* height: 100%; */
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul.mainmenu_list>li{
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.mainmenu_list>li>a{
+
+    font: bold 14px 'Noto Sans KR';
+    color: white;
+}
+ul.mainmenu_list>li.selected ul.submenu_list{
+    background: rgba(133,89,86,0.4);
+}
+ul.mainmenu_list>li::before{
+    content: "";
+    width: 120%;
+    height: 2px;
+    background: #969696;
+    position: absolute;
+    left: 50%;
+    margin-left: -60%;
+    bottom: 16px;
+    display: block;
+    scale: 0;
+    transition: 0.3s ease-out;
+}
+ul.mainmenu_list>li.selected::before{
+    scale: 1;
+}
+ul.submenu_list{
+    margin-top: 27px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    height: 149px;
+}
+ul.submenu_list>li{
+    margin-bottom: 16px;
+    text-align: center;
+}
+ul.submenu_list>li>a{
+    font: normal 14px 'Noto Sans KR';
+    color: #ddd;
+}
+ul.submenu_list>li:hover>a{
+    color: white;
+}
+nav.usermenu{
+    width: 7%;
+    height: 100%;
+    float: right;
+}
+ul.usermenu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+ul.usermenu_list li a{
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width:1200px){
+  header{
+    width: 100%;
+  }  
+}

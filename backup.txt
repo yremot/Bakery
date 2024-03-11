@@ -1,0 +1,20 @@
+                <ul className={Style.mainmenu_list}>
+                    <li className={Style.selected}><a href='#;'>HOME</a></li>
+                    <li><a href='#;'>MENU</a>
+                        {/* <ul className={Style.submenu_list}>
+                            <li><a href='#;'>메뉴</a></li>
+                        </ul> */}
+                    </li>
+                    <li><a href='#;'>NEWS</a>
+                        {/* <ul className={Style.submenu_list}>
+                            <li><a href='#;'>이벤트</a></li>
+                            <li><a href='#;'>새소식</a></li>
+                        </ul> */}
+                    </li>
+                    <li><a href='#;'>ABOUT US</a>
+                        {/* <ul className={Style.submenu_list}>
+                            <li><a href='#;'>베이커리 소개</a></li>
+                            <li><a href='#;'>매장 위치</a></li>
+                        </ul> */}
+                    </li>
+                </ul>

@@ -1,0 +1,163 @@
+div.contetns_wrap{
+    width: 100%;
+    min-height: 800px;
+}
+section.contents{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 200px 10px;
+    box-sizing: border-box;
+    min-width: 768px;
+}
+div.strawberry_img_wrap{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    /* padding-right: 5%; */
+}
+div.strawberry_img_wrap>img{
+    width: 100%;
+}
+ul.sub_img_list{
+    justify-content: center;
+    margin-top: 24px;
+}
+ul.sub_img_list li img{
+    width: 100%;
+}
+ul.sub_img_list li{
+    opacity: 0.7;
+}
+ul.sub_img_list li:hover{
+    opacity: 1;
+
+}
+ul.sub_img_list li:first-child{
+    margin-right: 16px;
+}
+div.strawberry_text_wrap{
+    width: 50%;
+    padding-left: 3%;
+    padding-top: 2em;
+    box-sizing: border-box;
+    margin-left: 50%;
+}
+p.name{
+    font: normal 2em/150% 'Noto Sans KR';
+}
+p.name_eng{
+    font: normal 1.5em/150% 'Noto Sans KR';
+    color: #7d7d7d;
+    margin-bottom: 0.88em;
+}
+p.text{
+    font: normal 1.25em/150% 'Noto Sans KR';
+    color: #2e2e2e;
+    margin-bottom: 1em;
+}
+p.price{
+    font: normal 1.25em/150% 'Noto Sans KR';
+    margin-bottom: 1.5em;
+}
+div.ingredient_wrap{
+    width: 300px;
+}
+p.ingredient_title{
+    font: normal 1.13em/150% 'Noto Sans KR';
+    margin-bottom: 16px;
+}
+p.ingredient_title i{
+    margin-right: 8px;
+    font-size: 5px;
+    position: relative;
+    top: -5px;
+}
+ul.ingredient_list{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+ul.ingredient_list li:nth-child(1) p.ingredient_img{
+    background: url(/public/images/menu/strawberry3.png) no-repeat center center;
+    background-size: cover;
+}
+ul.ingredient_list li:nth-child(2) p.ingredient_img{
+    background: url(/public/images/menu/strawberry4.png) no-repeat center center;
+    background-size: cover;
+}
+ul.ingredient_list li:nth-child(3) p.ingredient_img{
+    background: url(/public/images/menu/strawberry5.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+p.ingredient_img{
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 8px;
+}
+p.ingredient_name{
+    text-align: center;
+    font: normal 12px 'Noto Sans KR';
+    color: #7d7d7d;
+}
+
+nav.tab_menu_wrap{
+    margin-top: 300px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 200px;
+}
+ul.tab_menu_list{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border: solid 1px #b8b8b8;
+}
+ul.tab_menu_list li{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font: normal 24px/60px'Noto Sans KR';
+    border-bottom: solid 2px #434343;
+    box-sizing: border-box;
+}
+ul.tab_menu_list li.selected{
+    background-color: #331d12;
+    color: white;
+    border-bottom: 0px;
+}
+div.contents_detail{
+    width: 85%;
+    margin: 0px auto;
+}
+div.contents_detail img{
+    width: 100%;
+}
+div.contents_detail>button{
+    margin: 50px auto;
+    position: relative;
+    left: 50%;
+    margin-left: -65px;
+}
+
+
+@media screen and (max-width : 1200px) {
+    section.contents{
+        width: 100%;
+    }
+    div.strawberry_text_wrap{
+        font-size: 14px;
+        padding-top: 0px;
+    }
+    nav.tab_menu_wrap{
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+}
+

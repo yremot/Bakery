@@ -1,0 +1,30 @@
+div.aboutus_wrap{
+    width: 100%;
+    min-height: 800px;
+}
+section.aboutus{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 150px 10px;
+    box-sizing: border-box;
+    min-width: 768px;
+}
+h3.aboutus_title{
+    font: bold 24px 'Noto Sans KR';
+    margin-bottom: 40px;
+}
+.title_icon{
+    font-size: 24px;
+    margin-right: 4px;
+    position: relative;
+    top: 3px;
+}
+article{
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width:1200px) {
+    section.aboutus{
+        width: 100%;
+    }
+}
