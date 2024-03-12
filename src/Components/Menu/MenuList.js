@@ -74,7 +74,9 @@ export default function MenuList() {
                                         <img src={item.image} alt="초코칩파운드케이크" />           
                                         </a></p>
                                         <p className={Style.menu_name}>{item.name} 
-                                        <span>{item.category}</span>
+                                        {
+                                            ((item.isNew)&&<span>New</span>) || ((item.isBest)&&<span>Best</span>)
+                                        }
                                         </p>
                                         
                                         <p className={Style.menu_text}>{item.text}</p>

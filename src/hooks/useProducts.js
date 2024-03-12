@@ -10,7 +10,7 @@ export default function useProducts() {
         axios.get('/data/products.json').then((res)=>{
             setAllProducts(res.data)
         })
-    },[allProducts])
+    },[])
 
   return (
     [allProducts]

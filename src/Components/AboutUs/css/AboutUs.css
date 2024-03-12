@@ -9,9 +9,9 @@ section.aboutus{
     box-sizing: border-box;
     min-width: 768px;
 }
-h3.aboutus_title{
+.aboutus_title{
     font: bold 24px 'Noto Sans KR';
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .title_icon{
     font-size: 24px;
@@ -20,7 +20,7 @@ h3.aboutus_title{
     top: 3px;
 }
 article{
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width:1200px) {
