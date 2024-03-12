@@ -69,7 +69,7 @@ ul.mainmenu_list>li::before{
     scale: 0;
     transition: 0.3s ease-out;
 }
-ul.mainmenu_list>li.selected::before{
+ul.mainmenu_list>li:hover::before{
     scale: 1;
 }
 ul.submenu_list{

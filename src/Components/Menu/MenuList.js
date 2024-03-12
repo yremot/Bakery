@@ -11,7 +11,7 @@ export default function MenuList() {
 
   const [allCategory, setAllCategory] = useState(initCategory)
 
-  const [category, setCategory] = useState('All')
+  const [category, setCategory] = useState(initCategory[0])
 
 
   const changeCategory=(item)=>{
@@ -65,6 +65,26 @@ export default function MenuList() {
             </nav>
             <div className={Style.menu_list_wrap}>
                 <ul className={Style.menu_list}>
+                    {
+                        categoryItems.map((item)=>{
+                            return(
+                                <li>
+                                    <Link to={`/menu/${item.id}`}>
+                                        <p className={Style.menu_img}><a href="#;">
+                                        <img src={item.image} alt="초코칩파운드케이크" />           
+                                        </a></p>
+                                        <p className={Style.menu_name}>{item.name} 
+                                        <span>{item.category}</span>
+                                        </p>
+                                        
+                                        <p className={Style.menu_text}>{item.text}</p>
+                                        <p className={Style.menu_price}>가격 : {item.price} 원</p>
+                                        <button className={Style.menu_btn}><i class="fa-solid fa-chevron-right"></i></button>
+                                    </Link>
+                                </li>
+                            )
+                        })
+                    }
                     {/* <li>
                         <p className={Style.menu_img}><a href="#;">
                         <img src="./images/menu/menu0.png" alt="초코칩파운드케이크" />                      
@@ -146,27 +166,6 @@ export default function MenuList() {
                         <p className={Style.menu_price}>가격 : 4,000 원</p>
                         <button className={Style.menu_btn}><i class="fa-solid fa-chevron-right"></i></button>
                     </li> */}
-
-                    {
-                        categoryItems.map((item)=>{
-                            return(
-                                <li>
-                                    <Link to={`/menu/${item.id}`}>
-                                        <p className={Style.menu_img}><a href="#;">
-                                        <img src={item.image} alt="초코칩파운드케이크" />           
-                                        </a></p>
-                                        <p className={Style.menu_name}>{item.name} 
-                                        <span>{item.category}</span>
-                                        </p>
-                                        
-                                        <p className={Style.menu_text}>{item.text}</p>
-                                        <p className={Style.menu_price}>가격 : {item.price} 원</p>
-                                        <button className={Style.menu_btn}><i class="fa-solid fa-chevron-right"></i></button>
-                                    </Link>
-                                </li>
-                            )
-                        })
-                    }
                 </ul>
             </div>
             <div className={`${Style.page_list_wrap} `}>

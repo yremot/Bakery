@@ -24,7 +24,7 @@ export default function Strawberry() {
   return (
     <div className={Style.contents_wrap}>
         <section className={Style.contents}>
-            <h2 className='hidden'>딸기파이 상세</h2>
+            <h2 className='hidden'>{selectProduct?.name} 상세</h2>
             <div className={Style.strawberry_img_wrap}>
                 <img src={selectProduct?.image} alt={selectProduct?.name} className={Style.main_img}/>
                 {/* <ul className={`${Style.sub_img_list} is-flex`}>
