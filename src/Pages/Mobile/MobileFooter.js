@@ -1,7 +1,10 @@
 import React from 'react'
+import Style from './css/MFooter.module.css'
 
 export default function MobileFooter() {
   return (
-    <div>MobileFooter</div>
+    <footer className={Style.footer}>
+      footer
+    </footer>
   )
 }

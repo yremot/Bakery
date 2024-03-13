@@ -7,8 +7,8 @@ export default function MobileHeader() {
   return (
     <header className={Style.header}>
         <h1 className={Style.logo}><img src="/images/Mobile/cocoberry.png" alt="cocoberry"/></h1>
-        <button><GoBell className={Style.alarm_btn}/></button>
-        <button><IoMenu className={Style.menu_btn} /></button>
+        <button  className={Style.alarm_btn}><GoBell/></button>
+        <button className={Style.menu_btn}><IoMenu  /></button>
     </header>
   )
 }

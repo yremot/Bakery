@@ -10,7 +10,7 @@ div.header_wrap{
     top: 0px;
     z-index: 10;
 }
-header{
+header.header{
     width: 1200px;
     height: 100%;
     margin: 0px auto;

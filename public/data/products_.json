@@ -1,0 +1,115 @@
+[
+    {
+        "id":"001", 
+        "category":"BREAD",
+        "isBest":true,
+        "isNew":false,
+        "image":"https://firebasestorage.googleapis.com/v0/b/cocoberry-9ce6b.appspot.com/o/Menu%2Fmenu0.png?alt=media&token=9250e3a4-bc9a-4d2e-a688-304c95f8b82a",
+        "name":"초코칩 파운드",
+        "price":10000,
+        "text":"진한 초콜릿 칩이 살짝 녹아있는 고소한 파운드 케이크. 코코베리의 대표 시그니처 메뉴"    
+    },
+    {
+      "id":"002", 
+      "category":"PIE&COOKIE",
+      "isBest":false,
+      "isNew":true,
+      "image":"/images/menu/menu1.png",
+      "name":"딸기 파이",
+      "price":4200,
+      "text":"바삭하고 달달한 파이 사이에 부드러운 크림과 신선한 딸기가 어우러진 상큼한 맛. "    
+    },
+    {
+      "id":"003", 
+      "category":"PIE&COOKIE",
+      "isBest":true,
+      "isNew":false,
+      "image":"/images/menu/menu4.png",
+      "name":"몽블랑",
+      "price":3200,
+      "text":"밤이 들어가 더욱 고소하고 풍부한 크림에 더욱 고급스러워진 몽블랑 "  
+    },
+    {
+      "id":"004", 
+      "category":"PIE&COOKIE",
+      "isBest":true,
+      "isNew":false,
+      "image":"/images/menu/menu2.png",
+      "name":"레몬 머랭 파이",
+      "price":12000,
+      "text":"상큼한 레몬 머랭 크림과 고소하고 바삭한 타르트 쉘의 완변한 조화를 느낄 수 있는 레몬 머랭 파이" 
+    },
+    {
+      "id":"005", 
+      "category":"PIE&COOKIE",
+      "isBest":true,
+      "isNew":false,
+      "image":"/images/menu/menu3.png",
+      "name":"초코칩 쿠키",
+      "price":4000,
+      "text":"구워진 초콜릿 칩이 가득한 바삭하고 촉촉한 초코칩 쿠키."   
+    },
+    {
+      "id":"006", 
+      "category":"BREAD",
+      "isBest":false, 
+      "isNew":false,
+      "image":"/images/menu/menu5.png",
+      "name":"브라우니",
+      "price":3300,
+      "text":"부드럽고 촉촉한 텍스처의 초콜릿 브라우니로 진한 초콜릿의 풍미와 달콤한 맛을 한껏 느껴보세요. "    
+    },
+    {
+      "id":"007", 
+      "category":"CAKE",
+      "isBest":true,
+      "isNew":false, 
+      "image":"/images/menu/menu6.png",
+      "name":"우유 롤케이크",
+      "price":7000,
+      "text":"부드러운 스폰지 케이크에 신선한 크림을 듬뿍 얹고 롤 형태로 말아 만든 달달하고 촉촉한 우유롤케이크. "    
+    },
+    {
+      "id":"008", 
+      "category":"CAKE",
+      "isBest":false,
+      "isNew":false, 
+      "image":"/images/menu/menu7.png",
+      "name":"블루베리 치즈 케이크",
+      "price":5800,
+      "text":"고소한 크림 치즈와 상큼한 블루베리가 어우러진 맛있는 치즈케이크."    
+    },
+    {
+      "id":"009", 
+      "category":"BREAD",
+      "isBest":false, 
+      "isNew":true,
+      "image":"/images/menu/menu8.png",
+      "name":"딸기 크루아상",
+      "price":3800,
+      "text":"부드러운 크루아상에 신선한 딸기를 얹어 상큼하고 달콤한 맛을 느낄 수 있는 딸기 크루아상."    
+    },
+    {
+      "id":"010", 
+      "category":"CAKE",
+      "isBest":false, 
+      "isNew":false,
+      "image":"/images/menu/menu9.png",
+      "name":"라즈베리 크림 치즈 케이크",
+      "price":5800,
+      "text":"풍부한 크림 치즈와 상큼한 라즈베리가 어우러진 맛있는 크림치즈 케이크."    
+    },
+    {
+      "id":"011", 
+      "category":"BREAD",
+      "isBest":false,
+      "isNew":false, 
+      "image":"/images/menu/menu10.png",
+      "name":"크루아상",
+      "price":2800,
+      "text":"바삭하고 고소한 크루아상"    
+    }
+  
+  ]
+
+    

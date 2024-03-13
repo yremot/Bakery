@@ -9,6 +9,7 @@ import NotFound from './Pages/NotFound';
 import Root from './Pages/Root';
 import { isMobile } from 'react-device-detect';
 import MobileRoot from './Pages/Mobile/MobileRoot';
+import MobileHome from './Pages/Mobile/MobileHome';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
           element: <MobileRoot/>,
           errorElement: <NotFound/>,
           children:[
-              // {index:true, element:<Home/>},
+              {index:true, element:<MobileHome/>},
               // {path:'/menu', element:<Menu/>},
           ]
       }

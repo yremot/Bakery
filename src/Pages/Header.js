@@ -23,7 +23,7 @@ export default function Header() {
   return (
     // 헤더영역
     <div className={Style.header_wrap}>
-        <header>
+        <header className={Style.header}>
             <h1 className={Style.logo}><img src='/images/logo.png' alt='cocoberry'></img></h1>
             <nav className={Style.mainmenu}>
                 <h2 className='hidden'>메인메뉴</h2>
