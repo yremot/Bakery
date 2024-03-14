@@ -3,6 +3,7 @@ import Style from './css/Strawberry.module.css'
 import { useParams } from 'react-router-dom'
 // import useProducts from '../../hooks/useProducts'
 import { getProductDetail } from '../../api/firebase'
+import regExp from '../../util/regExp'
 
 
 export default function Strawberry() {
@@ -44,8 +45,8 @@ export default function Strawberry() {
             <div className={Style.strawberry_text_wrap}>
                 <p className={Style.name}>{selectProduct?.name}</p>
                 <p className={Style.name_eng}>{selectProduct?.category}</p>
-                <p className={Style.text}>{selectProduct?.text}</p>
-                <p className={Style.price}>가격 : {selectProduct?.price} 원</p>
+                <p className={Style.text}>{selectProduct?.text}</p> 
+                <p className={Style.price}>가격 :  {regExp.comma(selectProduct?.price)}원</p>
                 <div className={Style.ingredient_wrap}>
                     <p className={Style.ingredient_title}><i class="fa-solid fa-circle"></i>주재료</p>
                     <ul className={`${Style.ingredient_list} is-flex`}>

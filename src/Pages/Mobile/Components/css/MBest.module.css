@@ -4,6 +4,7 @@ section.mobile_best{
     box-sizing: border-box;
     padding: 20px 20px;
     margin-top: 50px;
+    overflow: hidden;
 }
 div.best_wrap{
     width: 100%;
@@ -65,7 +66,7 @@ span.best_sub_text{
     display: block;
 }
 div.best_btn{
-    width: 500px;
+    width: 90%;
     height: 8px;
     background: rgba(217,217,217,0.7);
     box-sizing: border-box;
