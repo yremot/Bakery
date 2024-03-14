@@ -6,7 +6,7 @@ div.footer_wrap{
     background: #1c1c1c;
     min-width: 768px;
 }
-footer{
+.footer{
     width: 1200px;
     height: 100%;
     margin: 0px auto;

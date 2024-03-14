@@ -1,0 +1,56 @@
+section.mobile_news{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.news_list_wrap{
+    width: 90%;
+    margin: 40px auto 20px auto;
+    /* margin-top: 40px; */
+}
+ul.news_list{
+    width: 100%;
+    height: 100%;
+}
+ul.news_list li{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-bottom: solid 1px #828282;
+}
+p.news_img{
+    width: 100%;
+    /* height: 150px; */
+    /* overflow: hidden; */
+    margin-bottom: 8px;
+    
+}
+p.news_img img{
+    width: 100%;
+}
+p.news_title{
+    font: bold 14px/150% 'Noto Sans KR';
+}
+p.news_text{
+    font: normal 10px/150% "Noto Sans KR";
+    margin-bottom: 20px;
+}
+button.news_btn{
+    width: 80px;
+    height: 30px;
+    /* margin: 20px auto; */
+    background: #FCADA7;
+    color: white;
+    border: none;
+    font: normal 12px 'Noto Sans KR';
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -40px;
+}

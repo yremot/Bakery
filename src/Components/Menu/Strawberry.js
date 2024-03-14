@@ -1,24 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Style from './css/Strawberry.module.css'
 import { useParams } from 'react-router-dom'
-import useProducts from '../../hooks/useProducts'
+// import useProducts from '../../hooks/useProducts'
+import { getProductDetail } from '../../api/firebase'
 
 
 export default function Strawberry() {
 
-  const [allProducts] = useProducts()
-
   const {menuItem} = useParams()
 
-  const selectProduct=getSelectItems(allProducts, menuItem)
+  const [selectProduct, setSelectItem] = useState({})
 
-  //console.log(selectProduct)
+  useEffect(()=>{
+    getProductDetail(menuItem).then((res)=>{
+        setSelectItem(res)
+    })
+    window.scrollTo(0,0)
+  }, [menuItem])
 
-  function getSelectItems(allProducts, menuItem){
-    return (
-        allProducts.find((item)=>(item.id===menuItem))
-    )
-  }
+//  const [allProducts] = useProducts()
+//  // menuItem을 params로 id 값 가져오기
+//
+//   const selectProduct=getSelectItems(allProducts, menuItem)
+//
+//   function getSelectItems(allProducts, menuItem){
+//     return (
+//         allProducts.find((item)=>(item.id===menuItem))
+//     )
+//   }
  
 
   return (

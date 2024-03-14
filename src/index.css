@@ -102,6 +102,34 @@ h2.sub_title{
   color: white;
   text-align: center;
 }
+/*  */
+h2.mobile_title{
+  font:bold 20px 'Noto Sans KR';
+  text-align: center;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+h2.mobile_title::after{
+  content: "";
+  display: block;
+  background: #d9d9d9;
+  width: 150px;
+  height: 2px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+}
+h2.mobile_title::before{
+  content: "";
+  display: block;
+  background: #d9d9d9;
+  width: 150px;
+  height: 2px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+}
 
 @media screen and (max-width:1200px){
   section.sub_visual{

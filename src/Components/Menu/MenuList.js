@@ -9,7 +9,7 @@ export default function MenuList() {
 
   const initCategory=['All', "BREAD", "PIE&COOKIE", "CAKE"]
 
-  const [allCategory, setAllCategory] = useState(initCategory)
+//   const [allCategory, setAllCategory] = useState(initCategory)   카테고리 필터링 할 때 필요하면 수정.
 
   const [category, setCategory] = useState(initCategory[0])
 
@@ -40,7 +40,7 @@ export default function MenuList() {
                 <h3 class='hidden'>메뉴 탭버튼</h3>
                 <ul className={`${Style.tabmenu_list} is-flex`}>
                     {
-                        allCategory.map((item)=>{
+                        initCategory.map((item)=>{
                             return(
                                 <li className={`${category===item && Style.selected}`} onClick={()=>{
                                     changeCategory(item)

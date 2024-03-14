@@ -1,0 +1,101 @@
+section.new{
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 40px 35px;
+}
+h2.new_title{
+    font: bold 14px 'Noto Sans KR';
+    margin-bottom: 10px
+}
+div.new_text_box{
+    width: 40%;
+    height: 100%;
+    float: left;
+    
+}
+p.new_text{
+    font: normal 12px/150% 'Noto Sans KR';
+    color: #333;
+    width: 100%;
+    margin-right: 25px;
+    margin-bottom: 16px;
+}
+button.button{
+    width: 80px;
+    height: 30px;
+    background-color: #FCADA7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    font: normal 12px 'Noto Sans KR';
+    border: none;
+}
+
+div.item_wrap{
+    width: 55%;
+    height: 100%;
+    float: right;
+    position: relative;
+    left: 0px;
+    top: -30px;
+    /* background: green; */
+}
+ul.item_list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.item_list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+ul.item_list li:first-child{
+    display: block;
+}
+p.item_img{
+    width: 100px;
+    margin: 0px auto;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.item_img img{
+    width: 100%;
+}
+p.item_name{
+    font: normal 12px 'Noto Sans KR';
+    text-align: center;
+    color: #333;
+    margin-top: 4px;
+}
+button.new_btn_left{
+    height: 25px;
+    border: none;
+    background: none;
+    color: #cdcdcd;
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -12px;
+    text-align: center;
+}
+button.new_btn_right{
+    height: 25px;
+    border: none;
+    background: none;
+    color: #cdcdcd;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -12px;
+}

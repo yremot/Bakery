@@ -1,0 +1,29 @@
+section.info{
+    width: 100%;
+    height: 70px;
+    background: #5F3F30;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+ul.info_list{
+    width: 100%;
+    height: 100%;
+}
+ul.info_list li{
+    box-sizing: border-box;
+    border-right: solid 1px #B9B9B9;
+    width: 25%;
+}
+ul.info_list li:last-child{
+    border: none;
+}
+ul.info_list li p{
+    text-align: center;
+    color: white;
+}
+p.info_icon{
+    font-size: 15px;
+}
+p.info_text{
+    font: normal 10px 'Noto Sans KR';
+}

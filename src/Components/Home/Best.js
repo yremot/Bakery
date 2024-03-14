@@ -1,4 +1,5 @@
 import useProducts from '../../hooks/useProducts'
+import regExp from '../../util/regExp'
 import Style from './css/Best.module.css'
 
 
@@ -89,8 +90,8 @@ export default function Best() {
                 <div className={`${Style.best_item} ${Style.best2}`}>
                     <p className={Style.best_item_image}><img src={item.image} alt={item.name} /></p>
                     <p className={Style.best_item_name}>
-                    {item.name}
-                    <span>{item.price} 원</span>
+                    {item.name} 
+                    <span>{regExp.comma(item.price)} 원</span>
                     </p>
 
 

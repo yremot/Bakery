@@ -1,4 +1,15 @@
 .footer{
     width: 100%;
-    background: red;
+    height: 70px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    font: normal 8px/150% 'Noto Sans KR';
 }

@@ -1,0 +1,88 @@
+section.mobile_best{
+    width: 100%;
+    height: 430px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+div.best_wrap{
+    width: 100%;
+    height: 240px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+ul.best_list{
+    width: 1000px;
+    height: 100%;
+}
+ul.best_list li{
+    width: 180px;
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.best_list li:nth-child(1){
+    background: url(/public/images/Mobile/best0.png) no-repeat center center;
+    background-size: cover;
+}
+ul.best_list li:nth-child(2){
+    background: url(/public/images/Mobile/best1.png) no-repeat center center;
+    background-size: cover;
+}
+ul.best_list li:nth-child(3){
+    background: url(/public/images/Mobile/best0.png) no-repeat center center;
+    background-size: cover;
+}
+p.best_img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+p.best_img img{
+    height: 100%;
+    margin-left: -50px;
+}
+p.best_text{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(51,29,18,0.6);
+    font: bold 14px/150% 'Noto Sans KR';
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+span.best_sub_text{
+    font: normal 10px 'Noto Sans KR';
+    color: #c2c2c2;
+    text-align: center;
+    display: block;
+}
+div.best_btn{
+    width: 500px;
+    height: 8px;
+    background: rgba(217,217,217,0.7);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+span.best_pinkbar{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #FCADA7;
+}

@@ -40,7 +40,6 @@ function App() {
               {path:'/news', element:<News/>},
               {path:'/aboutus', element:<AboutUs/>},
               {path:'/aboutus_shop', element:<AboutUsShop/>},
-              // {path:'/products/:productId', element:<ProductsDetail/>}
           ]
       }
     ])
