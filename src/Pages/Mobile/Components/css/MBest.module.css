@@ -1,6 +1,6 @@
 section.mobile_best{
     width: 100%;
-    height: 430px;
+    /* height: 430px; */
     box-sizing: border-box;
     padding: 20px 20px;
     margin-top: 50px;
@@ -13,11 +13,10 @@ div.best_wrap{
     margin-bottom: 30px;
     margin-left: 20px;
 }
-ul.best_list{
-    width: 1000px;
+div.best_list{
     height: 100%;
 }
-ul.best_list li{
+div.best_list div{
     width: 180px;
     height: 100%;
     float: left;
@@ -26,18 +25,7 @@ ul.best_list li{
     left: 0px;
     top: 0px;
 }
-ul.best_list li:nth-child(1){
-    background: url(/public/images/Mobile/best0.png) no-repeat center center;
-    background-size: cover;
-}
-ul.best_list li:nth-child(2){
-    background: url(/public/images/Mobile/best1.png) no-repeat center center;
-    background-size: cover;
-}
-ul.best_list li:nth-child(3){
-    background: url(/public/images/Mobile/best0.png) no-repeat center center;
-    background-size: cover;
-}
+
 p.best_img{
     width: 100%;
     height: 100%;
@@ -48,7 +36,8 @@ p.best_img img{
     margin-left: -50px;
 }
 p.best_text{
-    width: 100%;
+    /* width: 100%; */
+    width: 180px;
     height: 50px;
     position: absolute;
     bottom: 0px;
@@ -65,7 +54,7 @@ span.best_sub_text{
     text-align: center;
     display: block;
 }
-div.best_btn{
+/* div.best_btn{
     width: 90%;
     height: 8px;
     background: rgba(217,217,217,0.7);
@@ -86,4 +75,5 @@ span.best_pinkbar{
     box-sizing: border-box;
     border-radius: 20px;
     background: #FCADA7;
-}
+} */
+

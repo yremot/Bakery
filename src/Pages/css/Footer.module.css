@@ -39,7 +39,7 @@ footer p{
 }
 
 @media screen and (max-width:1200px) {
-    footer{
+    .footer{
         width: 100%;
     }
 }

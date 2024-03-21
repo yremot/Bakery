@@ -1,11 +1,11 @@
 section.brand{
     width: 100%;
-    height: 300px;
+    height: auto;
     box-sizing: border-box;
     padding: 20px 16px;
 }
 p.brand_img{
-    width: 90%;
+    width: 80%;
     text-align: center;
     margin: 0px auto;
     margin-bottom: 16px;
@@ -15,8 +15,8 @@ p.brand_img img{
 }
 p.title{
     text-align: center;
-    font: bold 14px 'Noto Sans KR';
-    margin-bottom: 8px;
+    font: bold 18px 'Noto Sans KR';
+    margin-bottom: 4px;
 }
 p.sub_title{
     text-align: center;

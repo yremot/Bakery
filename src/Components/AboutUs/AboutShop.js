@@ -13,8 +13,8 @@ export default function AboutShop() {
          <article className={Style.shop_info}>
             <h3 className='hidden'>매장 소개</h3>
             <div className={Style.shop_top_wrap}>
-                <p className={Style.shop_info_img1}><img src="./images/AboutUs/shop_info0.png" alt="매장사진1" /></p>
-                <p className={Style.shop_info_img2}><img src="./images/AboutUs/shop_info1.png" alt="매장사진2" /></p>
+                <p className={Style.shop_info_img1}><img src="./images/AboutUs/shop_info0_.png" alt="매장사진1" /></p>
+                <p className={Style.shop_info_img2}><img src="./images/AboutUs/shop_info1_.png" alt="매장사진2" /></p>
                 <p className={Style.shop_info_title}>매일 아침 신선한 빵<GiCurledLeaf className={Style.icon}/></p>
                 <p className={Style.shop_info_text}>코코베리는 매일 아침 신선한 빵을 굽습니다. 매일 아침마다 새로운 맛과 향을 선사하기 위해 저희는 신선한 재료를 선택하고, 정성껏 준비한 레시피로 빵을 만들어냅니다. </p>
             </div>

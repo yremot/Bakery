@@ -6,7 +6,7 @@ section.contents{
     width: 1200px;
     height: 100%;
     margin: 0px auto;
-    padding: 200px 10px;
+    padding: 100px 10px;
     box-sizing: border-box;
     min-width: 768px;
 }
@@ -107,10 +107,10 @@ p.ingredient_name{
 }
 
 nav.tab_menu_wrap{
-    margin-top: 300px;
+    margin-top: 150px;
     width: 100%;
     height: 60px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 ul.tab_menu_list{
     width: 100%;
@@ -138,7 +138,7 @@ div.contents_detail{
 div.contents_detail img{
     width: 100%;
 }
-div.contents_detail>button{
+div.contents_detail button{
     margin: 50px auto;
     position: relative;
     left: 50%;

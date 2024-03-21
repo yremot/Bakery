@@ -39,7 +39,7 @@ div.key_list_wrap{
 ul.key_list{
     width: 100%;
     height: 100%;
-    background: #5F3F30;
+    background: #A5856D;
     justify-content: space-around;
 }
 ul.key_list li p{
@@ -86,7 +86,14 @@ p.core_img img{
 p.core_title{
     text-align: center;
     font: normal 20px 'Noto Sans KR';
+    /* color: #626262; */
+}
+p.core_text{
+    text-align: center;
+    font: normal 16px 'Noto Sans KR';
     color: #626262;
+    width: 80%;
+    margin: 8px auto;
 }
 
 @media screen and (max-width:1200px) {

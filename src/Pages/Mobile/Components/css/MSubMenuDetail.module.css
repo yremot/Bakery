@@ -1,0 +1,91 @@
+div.mobile_sub_visual{
+    width: 100%;
+    height: 100px;
+    background: url(/public/images/menu/menuvisual.jpg) no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+div.mobile_sub_visual p a{
+    font: normal 20px 'Bree Serif';
+    color: white;
+}
+div.menu{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+div.menu_item_wrap{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+p.menu_img{
+    width: 70%;
+    height: auto;
+    margin-bottom: 16px;
+}
+p.menu_img img{
+    width: 100%;
+}
+p.menu_name{
+    font: normal 20px 'Noto Sans KR';
+    float: left;
+    margin-right: 4px;
+}
+p.menu_category{
+    font: normal 18px 'Noto Sans KR';
+    color:  #7d7d7d;
+    margin-bottom: 8px;
+    padding-top: 2px;
+}
+p.menu_text{
+    font: normal 16px/150% 'Noto Sans KR';
+    color: #2e2e2e;
+    margin-bottom: 8px;
+    width: 90%;
+}
+p.menu_price{
+    font: normal 14px "Noto Sans KR";
+    margin-bottom: 60px;
+}
+nav.tab_menu_wrap{
+    width: 100%;
+    height: 30px;
+}
+ul.tab_menu_list{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 1px #b8b8b8;
+}
+ul.tab_menu_list li{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font: normal 14px/30px'Noto Sans KR';
+    border-bottom: solid 2px #434343;
+    box-sizing: border-box;
+}
+ul.tab_menu_list li.selected{
+    background-color: #331d12;
+    color: white;
+    border-bottom: 0px;
+}
+div.contents_detail{
+    width: 100%;
+    padding-top: 50px;
+}
+div.contents_detail img{
+    width: 100%;
+}
+div.contents_detail button{
+    width: 90px;
+    height: 25px;
+    margin: 50px auto;
+    position: relative;
+    left: 50%;
+    margin-left: -45px;
+    font: normal 14px 'Noto Sans KR';
+}

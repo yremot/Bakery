@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 // import useProducts from '../../hooks/useProducts'
 import { getProductDetail } from '../../api/firebase'
 import regExp from '../../util/regExp'
+import { Link } from 'react-router-dom'
 
 
 export default function Strawberry() {
@@ -16,8 +17,8 @@ export default function Strawberry() {
     getProductDetail(menuItem).then((res)=>{
         setSelectItem(res)
     })
-    window.scrollTo(0,0)
   }, [menuItem])
+  window.scrollTo(0,0)
 
 //  const [allProducts] = useProducts()
 //  // menuItem을 params로 id 값 가져오기
@@ -76,7 +77,7 @@ export default function Strawberry() {
             <div className={Style.contents_detail}>
                 <img src="/images/menu/strawberry_img0.jpg" alt="딸기파이설명이미지" />
                 <img src="/images/menu/strawberry_img1.jpg" alt="딸기파이설명이미지2" />
-                <button className='btn_pink'>목록 보기</button>
+                <Link to={`/menu`}><button className='btn_pink'>목록 보기</button></Link>
             </div>
 
         </section>

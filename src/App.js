@@ -10,6 +10,8 @@ import Root from './Pages/Root';
 import { isMobile } from 'react-device-detect';
 import MobileRoot from './Pages/Mobile/MobileRoot';
 import MobileHome from './Pages/Mobile/MobileHome';
+import MobileMenu from './Pages/Mobile/MobileMenu';
+import MMenuItem from './Pages/Mobile/MMenuItem';
 
 function App() {
 
@@ -23,11 +25,13 @@ function App() {
           errorElement: <NotFound/>,
           children:[
               {index:true, element:<MobileHome/>},
-              // {path:'/menu', element:<Menu/>},
+              {path:'/menu', element:<MobileMenu/>},
+              {path:'/menu/:menuItem', element:<MMenuItem/>},
           ]
       }
     ])
   }else{
+
     router=createBrowserRouter([
       {
           path:'/',

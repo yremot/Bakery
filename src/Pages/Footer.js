@@ -4,7 +4,7 @@ import Style from './css/Footer.module.css'
 export default function Footer() {
   return (
     <div className={Style.footer_wrap}>
-        <footer>
+        <footer className={Style.footer}>
             <h2 class="hidden">하단영역</h2>
             <p>
                 (우) 44687 부산광역시 남구 옥현로 129, 울산벤처빌딩 802호 인플러스

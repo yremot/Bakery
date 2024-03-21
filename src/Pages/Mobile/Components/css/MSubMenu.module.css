@@ -1,0 +1,94 @@
+div.mobile_sub_visual{
+    width: 100%;
+    height: 100px;
+    background: url(/public/images/menu/menuvisual.jpg) no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+div.mobile_sub_visual p a{
+    font: normal 20px 'Bree Serif';
+    color: white;
+}
+div.menu{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+nav.tabmenu_wrap{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+ul.tabmenu_list{
+    width: 100%;
+    height: 100%;
+}
+ul.tabmenu_list li{
+    position: relative;
+}
+ul.tabmenu_list li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    scale: 0;
+    transition: 0.3s ease-out;
+}
+ul.tabmenu_list li.selected::after{
+    scale: 1;
+}
+ul.tabmenu_list a{
+    font: bold 16px 'Noto Sans KR';
+    width: 100%;
+}
+div.menulist_wrap{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+ul.menulist{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1em;
+    padding-bottom: 50px;
+}
+ul.menulist li{
+    background: white;
+    box-sizing: border-box;
+    padding-bottom: 10px ;
+}
+p.menu_img{
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+p.menu_img img{
+    width: 100%;
+}
+p.menu_name{
+    width: 100%;
+    font: bold 14px 'Noto Sans KR';
+    padding: 0px 8px 8px 8px;
+    box-sizing: border-box;
+}
+p.menu_text{
+    font: normal 13px 'Noto Sans KR';
+    padding: 0px 8px 8px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+p.menu_price{
+    font: normal 14px 'Noto Sans KR';
+    color: #333;
+    padding: 0px 8px 8px 8px;
+}
+

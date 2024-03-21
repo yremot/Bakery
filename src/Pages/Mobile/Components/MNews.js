@@ -23,10 +23,10 @@ export default function MNews() {
                         <img src="/images/Mobile/news1.png" alt="신메뉴 홍보 사진" />
                     </p>
                     <p className={Style.news_title}>
-                    회원 포인트 적립 이벤트
+                    딸기 신메뉴 출시
                     </p>
                     <p className={Style.news_text}>
-                    회원가입한 회원들께 이번달 적립 포인트 2배 이벤트를 진행합니다.
+                    신선한 딸기의 달콤함이 가득한 메뉴를 맛보세요.
                     </p>
                 </li>
             </ul>

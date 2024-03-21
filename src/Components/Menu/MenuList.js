@@ -30,6 +30,7 @@ export default function MenuList() {
     }
   }
 
+
   //console.log(allProducts)
   
   return (

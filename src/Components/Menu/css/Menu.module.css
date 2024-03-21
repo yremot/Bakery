@@ -15,11 +15,6 @@ p.menu_name{
     font: bold 1.5em "Noto Sans KR";
     padding: 0.5em 0.5em 0.5em 0.88em;
 }
-ul.menu_list li span{
-    font: normal 0.5em "Noto Sans KR";
-    color: #6c6c6c;
-    margin-left: 4px;
-}
 p.menu_text{
     font: normal 0.88em/150% "Noto Sans KR";
     padding-left: 1.5em;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import useProducts from '../../hooks/useProducts'
 import regExp from '../../util/regExp'
 import Style from './css/Best.module.css'
@@ -18,17 +19,17 @@ export default function Best() {
     )
   }
 
-
-
-
   return (
     <div className={Style.best_wrap}>
-        <div className={`${Style.best_item} ${Style.best1}`}>
-            <p className={Style.best_item_name}>
-                초코칩 파운드 케이크
-                <span>10,000 원</span>
-            </p>
-        </div>
+        <div className={Style.best_top_inner}>
+        <Link to={'menu/001'}>
+            <div className={`${Style.best_item} ${Style.best1}`}>
+                <p className={Style.best_item_name}>
+                    초코칩 파운드 케이크
+                    <span>10,000 원</span>
+                </p>
+            </div>
+        </Link>
         <section className={Style.best}>
             <h2 className='hidden'>베스트메뉴</h2>
             <p className={Style.sign}><img src="./images/contents/diamond.png" alt="다이아 기호" />OUR SIGNITURE</p>
@@ -58,6 +59,7 @@ export default function Best() {
 
 
         </section>
+        </div>
         {/* <div className={`${Style.best_item} ${Style.best2}`}>
             <p className={Style.best_item_name}>
                 <span>Top 2</span>
@@ -83,25 +85,34 @@ export default function Best() {
                 우유 롤케이크
             </p>
         </div> */}
-
-        {
-            bestProduts.map((item)=>{
-               return(
-                <div className={`${Style.best_item} ${Style.best2}`}>
-                    <p className={Style.best_item_image}><img src={item.image} alt={item.name} /></p>
-                    <p className={Style.best_item_name}>
-                    {item.name} 
-                    <span>{regExp.comma(item.price)} 원</span>
-                    </p>
-
-
-                </div>
-               )
-            })
+        <div className={Style.best_bottom_inner}>
+            <div className={Style.best_box}>
+                <p className={Style.best_box_title}>
+                   BEST TOP 5
+                </p>
+                <p className={Style.best_box_text}>
+                    코코베리의 인기 메뉴들을 매장에서 만나보세요. 제품 이미지를 클릭하면 상세페이지로 이동합니다.
+                </p>
+            </div>
         
-        }
+            {
+                bestProduts.map((item)=>{
+                return(
+                    <div className={`${Style.best_item} ${Style.best2}`}>
+                        <Link to={`/menu/${item.id}`}>
+                            <p className={Style.best_item_image} ><img src={item.image} alt={item.name} /></p>
+                            <p className={Style.best_item_name}>
+                            {item.name} 
+                            <span>{regExp.comma(item.price)} 원</span>
+                            </p>
+                        </Link>
+                    </div>
+                )
+                })
+            
+            }
 
-
+        </div>
 
 
        

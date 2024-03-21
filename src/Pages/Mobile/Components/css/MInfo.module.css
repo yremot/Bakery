@@ -22,8 +22,9 @@ ul.info_list li p{
     color: white;
 }
 p.info_icon{
-    font-size: 15px;
+    font-size: 24px;
 }
 p.info_text{
+    margin-top: 8px;
     font: normal 10px 'Noto Sans KR';
 }

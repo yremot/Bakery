@@ -5,14 +5,13 @@ section.new{
     padding: 40px 35px;
 }
 h2.new_title{
-    font: bold 14px 'Noto Sans KR';
+    font: bold 18px 'Noto Sans KR';
     margin-bottom: 10px
 }
 div.new_text_box{
     width: 40%;
     height: 100%;
     float: left;
-    
 }
 p.new_text{
     font: normal 12px/150% 'Noto Sans KR';
@@ -24,7 +23,7 @@ p.new_text{
 button.button{
     width: 80px;
     height: 30px;
-    background-color: #FCADA7;
+    background-color:#ee665c;
     box-sizing: border-box;
     border-radius: 10px;
     color: white;
@@ -32,16 +31,8 @@ button.button{
     border: none;
 }
 
-div.item_wrap{
-    width: 55%;
-    height: 100%;
-    float: right;
-    position: relative;
-    left: 0px;
-    top: -30px;
-    /* background: green; */
-}
-ul.item_list{
+
+/* ul.item_list{
     width: 100%;
     height: 100%;
     position: relative;
@@ -58,7 +49,7 @@ ul.item_list li{
 }
 ul.item_list li:first-child{
     display: block;
-}
+} */
 p.item_img{
     width: 100px;
     margin: 0px auto;

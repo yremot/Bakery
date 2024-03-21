@@ -1,13 +1,15 @@
 div.menuitem_wrap{
     width: 100%;
     height: auto;
-    min-height: 800px;
+    min-height: 768px;
+    box-sizing: border-box;
 }
 section.menuitem{
     width: 1200px;
     min-width: 768px;
     margin: 0px auto;
     padding: 150px 10px;
+    box-sizing: border-box;
 }
 nav.tabmenu{
     width: 550px;
@@ -53,15 +55,22 @@ ul.menu_list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-gap: 1.5em;
+    grid-gap: 2em;
+    box-sizing: border-box;
 }
-ul.menu_list li{
+ ul.menu_list li{
     background: white;
     height: 450px;
     position: relative;
     left: 0px;
     top: 0px;
 }
+ul.menu_list li span{
+    font: normal 0.5em "Noto Sans KR";
+    color: #6c6c6c;
+    margin-left: 4px;
+}
+
 p.menu_img{
     width: 100%;
 }
@@ -71,11 +80,6 @@ p.menu_img img{
 p.menu_name{
     font: bold 1.5em "Noto Sans KR";
     padding: 0.5em 0.5em 0.5em 0.88em;
-}
-ul.menu_list li span{
-    font: normal 0.5em "Noto Sans KR";
-    color: #6c6c6c;
-    margin-left: 4px;
 }
 p.menu_text{
     font: normal 0.88em/150% "Noto Sans KR";
@@ -124,6 +128,7 @@ ul.page_list li{
 ul.page_list li.selected{
     font-weight: bold;
 }
+
 div.page_list_wrap button{
     position: absolute;
     background: none;
@@ -137,7 +142,7 @@ button.page_left_btn{
 }
 button.page_right_btn{
     right: -30px;
-}
+} 
 
 
 
@@ -148,9 +153,9 @@ button.page_right_btn{
     }
 }
 @media screen and (max-width:980px){
-    ul.menu_list{
+    /* ul.menu_list{
         grid-gap: 0.6em;
-    }
+    } */
     ul.menu_list li{
         height: 380px;
         font-size: 14px;

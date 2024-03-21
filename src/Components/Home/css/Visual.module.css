@@ -1,5 +1,5 @@
 /* 비주얼영역 */
-div.visual_wrap{
+/* div.visual_wrap{
     width: 100%;
     height: 700px;
     position: relative;
@@ -34,14 +34,16 @@ li.visual2{
     background: url(/public/images/visual2.jpg) no-repeat center center;
     background-size: cover;
     display: none;
-}
+} */
 section.visual{
-    width: 1200px;
-    height: 100%;
+    width:  100%;
+    height: 700px;
     margin: 0px auto;
     box-sizing: border-box;
     padding-top: 250px;
     min-width: 768px;
+    margin-top: 80px;
+    background-size: cover;
 }
 h2.visual_title{
     width: 100%;
@@ -55,6 +57,7 @@ p.visual_text{
     text-align: center;
     font: normal 20px 'Noto Sans KR';
 }
+/*
 div.dot_list_wrap{
     position: absolute;
     bottom: 20px;
@@ -63,7 +66,7 @@ div.dot_list_wrap{
     width: 80px;
     height: 20px;
 }
-ul.dot_list{
+ ul.dot_list{
     width: 100%;
 }
 ul.dot_list li{
@@ -75,7 +78,9 @@ ul.dot_list li{
 }
 ul.dot_list li.selected{
     background: #FCADA7;
-}
+} */
+
+
 
 @media screen and (max-width:1200px){
     section.visual{

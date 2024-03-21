@@ -102,7 +102,7 @@ h2.sub_title{
   color: white;
   text-align: center;
 }
-/*  */
+/* 모바일 */
 h2.mobile_title{
   font:bold 20px 'Noto Sans KR';
   text-align: center;
@@ -117,7 +117,7 @@ h2.mobile_title::after{
   width: 150px;
   height: 2px;
   position: absolute;
-  right: -20px;
+  right: -50px;
   top: 50%;
 }
 h2.mobile_title::before{
@@ -127,9 +127,10 @@ h2.mobile_title::before{
   width: 150px;
   height: 2px;
   position: absolute;
-  left: -20px;
+  left: -50px;
   top: 50%;
 }
+
 
 @media screen and (max-width:1200px){
   section.sub_visual{

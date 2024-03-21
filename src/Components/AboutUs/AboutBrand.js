@@ -4,6 +4,9 @@ import './css/AboutUs.css'
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 export default function AboutBrand() {
+
+  window.scrollTo(0,0)
+  
   return ( 
     <div className='aboutus_wrap'>
        <section className='aboutus'>
@@ -55,14 +58,17 @@ export default function AboutBrand() {
                     <li>
                         <p className={Style.core_img}><img src="./images/AboutUs/value1.png" alt="행복한경험" /></p>
                         <p className={Style.core_title}>행복한 경험</p>
+                        <p className={Style.core_text}> 고객들에게 행복과 기쁨을 주는 특별한 경험을</p>
                     </li>
                     <li>
                         <p className={Style.core_img}><img src="./images/AboutUs/value2.png" alt="도전" /></p>
                         <p className={Style.core_title}>도전</p>
+                        <p className={Style.core_text}> 도전과 노력을 통해 <br/> 끊임없는 성장을</p>
                     </li>
                     <li>
                         <p className={Style.core_img}><img src="./images/AboutUs/value3.png" alt="함께하는 마음" /></p>
                         <p className={Style.core_title}>함께하는 마음</p>
+                        <p className={Style.core_text}> 언제나 직원과 고객들이 하나 된 마음으로 </p>
                     </li>
                   </ul>
                 </div>
