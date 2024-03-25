@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Style from './css/Header.module.css'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
@@ -11,11 +11,11 @@ export default function Header() {
         {key:'2', menuName:'NEWS', path:'/news', subMenuList:[{index:1, name:'이벤트', path:'/news'},{index:2, name:'새소식', path:'/news'}]},
         {key:'3', menuName:'ABOUT US', path:'/aboutus', subMenuList:[{index:3, name:'브랜드 소개', path:'/aboutus'},{index:4, name:'매장 소개', path:'/aboutus_shop'}]},
     ]
-    const [category, setCategory] = useState(mainMenu[0].menuName)
+    // const [category, setCategory] = useState(mainMenu[0].menuName)
 
-    const changeCategory=(category)=>{
-        setCategory(category)
-    }
+    // const changeCategory=(category)=>{
+    //     setCategory(category)
+    // }
 
     const headerWrap = useRef();
     const submenu = useRef([]);
@@ -42,7 +42,6 @@ export default function Header() {
 
     }
 
-
   return (
     // 헤더영역
     <div className={Style.header_wrap} ref={headerWrap} onMouseLeave={closemenu}>
@@ -57,7 +56,7 @@ export default function Header() {
                     {
                         mainMenu.map((item)=>{
                             return(
-                                <li onClick={()=>{changeCategory(item.menuName)}}>
+                                <li>
                                         {
                                         (item.subMenuList.length < 1) ? 
                                         <>
